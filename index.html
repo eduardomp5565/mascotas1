@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica 1 - Mascotas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .rojo {
+            color: red;
+        }
+
+        .verde {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="rojo">Bienvenidos a la página de mascotas</h1>
+    <h2 class="verde">Información sobre mascotas</h2>
+    <p>Las mascotas son parte de nuestra familia.</p>
+    <p>Es importante cuidarlas y darles amor.</p>
+    <img src="Img/perro2.jpeg" alt="Mascota 1">
+    <img src="Img/gato2.jpeg" alt="Mascota 2">
+</body>
+
+</html>
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica 2 - Mascotas en Tabla</title>
+</head>
+
+<body>
+    <h1>Tabla de Mascotas</h1>
+    <table border="1">
+        <tr>
+            <th>Nombre</th>
+            <th>Imagen</th>
+            <th>Enlace</th>
+        </tr>
+        <tr>
+            <td>Perro</td>
+            <td><img src="Img/perro1.jpeg" alt="Perro" width="100"></td>
+            <td><a href="https://www.perros.com/perros">Más sobre perros</a></td>
+        </tr>
+        <tr>
+            <td>Gato</td>
+            <td><img src="Img/gato1.jpeg" alt="Gato" width="100"></td>
+            <td><a href="https://www.gatos.com/gatos">Más sobre gatos</a></td>
+        </tr>
+    </table>
+</body>
+
+</html>
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mis Mascotas con Divisiones</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            padding: 10px;
+            margin-top: 10px;
+        }
+
+        .perros {
+            border: 2px solid blue;
+        }
+
+        .gatos {
+            border: 2px solid green;
+        }
+
+        .videos {
+            border: 2px solid red;
+        }
+
+        h1 {
+            color: blue;
+        }
+
+        img {
+            width: 200px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Sección de introducción -->
+    <div class="container perros">
+        <h1>Mis Mascotas</h1>
+        <p>Los perros y gatos son mis favoritos.</p>
+    </div>
+
+    <!-- Sección de imágenes de mascotas -->
+    <div class="container gatos">
+        <img src="Img/perro2.jpeg" alt="Imagen de un perro">
+        <img src="Img/gato4.jpeg" alt="Imagen de un gato">
+    </div>
+
+    <!-- Sección de enlaces a videos -->
+    <div class="container videos">
+        <a href="https://www.youtube.com/watch?v=video_perro" target="_blank">Video sobre Perros</a><br>
+        <a href="https://www.youtube.com/watch?v=video_gato" target="_blank">Video sobre Gatos</a>
+    </div>
+
+</body>
+
+</html>
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica 4 - Formulario de Mascotas</title>
+</head>
+
+<body>
+    <h1>Formulario de Registro de Mascotas</h1>
+    <form>
+        <label for="nombre">Nombre de la mascota:</label>
+        <input type="text" id="nombre" name="nombre"><br><br>
+
+        <label for="tipo">Tipo de mascota:</label>
+        <select id="tipo" name="tipo">
+            <option value="perro">Perro</option>
+            <option value="gato">Gato</option>
+        </select><br><br>
+
+        <label for="vacunas">Vacunas:</label>
+        <input type="checkbox" id="vacunas" name="vacunas"> Vacunada<br><br>
+
+        <label>Sexo:</label>
+        <input type="radio" id="masculino" name="sexo" value="masculino">
+        <label for="masculino">Masculino</label>
+        <input type="radio" id="femenino" name="sexo" value="femenino">
+        <label for="femenino">Femenino</label><br><br>
+
+        <input type="submit" value="Registrar">
+    </form>
+</body>
+
+</html>
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica 5 - Carga de Imagen</title>
+</head>
+
+<body>
+    <h1>Formulario de Carga de Imagen</h1>
+    <form action="resultados_mascota.html" method="post" enctype="multipart/form-data">
+        <label for="imagen">Cargar imagen de la mascota:</label>
+        <input type="file" id="imagen" name="imagen"><br><br>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+
+</html>
